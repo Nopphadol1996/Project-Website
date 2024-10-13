@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1140px;
+    margin: 0 auto; /* 0 = บนล่าง auto ซ้ายขวา auto */
+}
+
+nav {
+
+    padding: 1rem;
+    background-color: #333;
+ 
+
+}
+.nav-con{
+    display: flex;
+    justify-content: space-between; /* เมนูด้านซ้อย เมนูด้านขวา( ตรงกลาง) แกนแนวนอน X */  
+}
+/*  */
+.logo a {
+    font-size: 2rem; /* font ขนาด 2rem */
+    color: #fff;
+    text-decoration: none; /* ลบขีดเส้นใต้  */
+}
+
+.menu {
+    display: flex; /* กำหนดให้ต่อกันเป็นแนวนอน */
+    list-style: none; /* ลบจุดไข่ปลาหน้าเมนู */
+    align-items: center; /* ให้เมนูอยู่ตรงกลางในแนวแกน Y (แนวตั้ง) */
+}
+
+.menu li  {
+    margin: 0 1rem; /* margin 0, ด้านซ้าย ขวา 1 rem */
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero{
+    background-color: #f0f0f0;
+}
+.hero-con{
+    display: flex;
+    
+}
+
+.hero-info{
+    width: 100%;
+    padding: 2rem;
+}
+.hero-info h3{
+    font-size: 2rem;
+}
+
+.hero-info p{
+    margin: 1rem 0;
+}
+
+.hero .hero-btn {
+    display: inline-block;
+    background-color: orange;
+    color: #fff;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.hero-img img{
+    padding: 2rem;
+    width: 100%;
+    
+}
+
+.blog-con {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2rem; /* gap ระหว่างรูปภาพ */
+}
+
+.blog-title {
+    margin: 2rem 0;
+}
+
+.blog-item img {
+    width: 100%;
+}
+
+.blog-item h4{
+    margin-top: 1rem;
+}
+
+.blog-item p{
+    margin: 1rem 0;
+}
+
+.blog-item a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    background-color: orange;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+.footer-top {
+    margin-top: 2rem;
+    padding: 3rem;
+    background-color: #333;
+    color: #fff;
+}
+
+.footer-top-con {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2rem;
+}
+
+.footer-top-item-con {
+    display: flex;
+    margin: 1rem 0;  /* บนล่าง 1rem ซ้ายขวา 0 */
+    
+}
+
+.footer-top-item-con .date{
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 0.5rem;
+    border-radius: 5px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.footer-top-item:nth-child(2),
+.footer-top-item:nth-child(3) h4{
+    margin-bottom: 1rem;
+}
+
+/* .footer-top-item:nth-child(3) h4{
+    margin-bottom: 1rem;
+} สามารถใช้ได้อีก 1 วิธี รวบลัด */
+
+.footer-bottom {
+    background-color: #f0f0f0;
+    padding: 1rem;
+    text-align: center;
+}
